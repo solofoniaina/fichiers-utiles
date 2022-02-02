@@ -1,0 +1,120 @@
+//permuter 2 variables
+
+list($a,$b) = array($b,$a);
+
+Require # include
+
+R : arrete le script si fichier introuvable
+I : continue le script meme fichier manquant
+
+_ONCE : - eviter d'inclure 2 fois 1 meme fichier
+	- eviter de declarer 2 fois 1 fonction dans un même fichier
+
+BONNES PRATIQUES:
+* Ecrire code en anglais
+* fichier PHP -> enlever la balise "?>"
+* au lieu de <?php echo $texte ?> => <?= $texte ?>
+
+GIT
+
+//initialiser repository
+git init
+
+//indexer fichier
+git add nom_fichier
+
+//enregistrer nouvelle version dans repos, -m : message
+git commit -m "commentaire"
+
+//Relier local<->distant
+//copier lien dans repository github (distant)
+
+git remote add origin https://github.com/solofoniaina/boss_git.git
+
+//Brancher le deux
+
+git branch -M main
+
+//FAIRE UN COMMIT vers le repos distant
+
+git push -u origin main
+
+//Si probleme d'authentification
+//Aller vers github.com/settings/tokens
+//Créer un nouveau token
+//Utiliser ce token à la place de pwd
+//ça y est
+
+//pour afficher les branches (copies) du projet
+
+git branch
+
+//pour creer un nouveau branch
+
+git branch nom_branche
+
+//pour basculer vers ce branche
+
+git checkout nom_branche
+
+//Après modification
+//FUSIONNER Les MODIFICATIONS avec le projet original
+
+//=>Basculer vers la branche à mettre a jour (recepteur)
+
+git checkout main
+
+//Merge les modification
+
+git merge cagnote
+
+//CLONE UN PROJET
+
+git clone https://github.com/solofoniaina/boss_git.git
+
+//Maj projet local
+
+git pull boss_git main
+
+//Demande de fusion apres modification sur un autre BRANCHE
+
+=> sur l'interface Github, il y a un bouton "compare é pull request"
+
+//Voir les fichiers qui sont indéxés (en attente de commit)
+
+git status
+
+//Retour sur la modification qui n'est pas encore commit (retour à la derniere commit)
+
+git stash
+
+// appliquer cette modification dans une autre branche 
+
+git stash apply
+
+// afficher la liste de stash
+
+$ git stash list
+stash@{0}: WIP on main: a1a517c new fich
+
+//appliquer la modification ilaina
+
+git stash apply stash@{0}
+
+//ANNULER MODIF DEJA COMMIT
+//Afficher le log
+git log commit 
+ca83a6dff817ec66f443420071545390a954664949 Author: Marc 
+<Marc@gee-mail.com> Date: Mon Mar 19 21:52:11 2019 -0700
+
+//restaurer la derniere modification
+git reset --hard HEAD^
+
+//appliquer le modif dans une autre branche (8 premier bit de l'identifiant de modif)
+git reset --hard ca83a6dff8 
+
+
+// FICHIER OUBLIE POUR COMMIT : ajouter le fichier oublié à la derniere commit sans modification du message
+
+git commit --amend --no-edit
+

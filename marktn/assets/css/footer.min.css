@@ -1,0 +1,14 @@
+.panier_mobile{
+    height: 52px;
+    width: 52px;
+    background-color: #830052;
+    padding: 6x;
+    padding-top: 16px;
+    border-radius: 26px;
+    text-align: center;
+    position: fixed;
+    bottom: 32px;
+    right: 25px;
+    opacity: 0.9;
+    z-index: 8;
+}

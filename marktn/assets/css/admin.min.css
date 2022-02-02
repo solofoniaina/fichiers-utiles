@@ -1,0 +1,11 @@
+.td_agence{
+	padding-left : 10px;
+	padding-right: 10px;
+}
+.cell{
+	vertical-align: inherit !important;
+    text-align: center;
+}
+.cell.header{
+	font-family: fantasy;
+}

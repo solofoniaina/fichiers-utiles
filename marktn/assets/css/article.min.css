@@ -1,0 +1,110 @@
+
+.formulaire{
+	padding: 20px;
+    background-color: #91285d3d;
+}
+
+.section{
+    padding: 50px;
+    /*background:url(../images/profils/membre.jpg);
+    background-attachment: fixed;
+	background-position: center;*/
+	background-color: #96cff745;
+    color: #000;
+}
+.section-gris{
+	padding: 15px 30px 16px;
+    color: #fff;
+    background-color: #036eb9;
+    position: sticky;
+    top: 53px;
+    z-index: 3;
+}
+@media(max-width: 900px){
+    .section-gris {
+        padding: 15px 30px 16px;
+        color: #fff;
+        background-color: #036eb9;
+        position: relative;
+        top: 0px;
+        z-index: 3;
+    }
+}
+.description{
+    padding: 31px;
+    margin-top: 10px;
+    background-color: #f0f8fe;
+    border-radius: 8px;
+}
+
+/*RECHERCHE */
+@media(min-width: 768px){
+    #categorie, #etat{
+        width: 117px
+    }
+    #categorie{
+        border-top-left-radius: 28px !important;
+        border-bottom-left-radius: 28px !important;
+    }
+    #btn_search{
+        border-top-right-radius: 28px !important;
+        border-bottom-right-radius: 28px !important;
+    }
+}
+
+.presentation{
+	padding: 50px;
+    text-align: justify;
+}
+.thumbnail{
+	background-color: #fff  !important;
+}
+.thumbnail .caption{
+	color: #333 !important;
+}
+.actualites{
+    background-color: #585456;
+    padding-bottom: 20px;
+}
+
+/* LISTE ACHAT PRODUIT */
+.achat{
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.achat.non{
+    background-color: #fff;
+}
+.achat.attente{
+    background-color: #ec93493b;
+    border: #ec9349 dashed;
+}
+.achat.ok{
+    background-color: #a7daf330;
+    border: #a7daf3 dashed;
+}
+.achat.nok{
+    background-color: #fff;
+    border: #a7daf3 dashed;
+}
+.achat.ko{
+    background-color: #d9534f36;
+    border: #ff0700 dashed;
+}
+.commande{
+    background-color: #ccc;
+    border: 1px solid #02ae04
+    color: #fff;
+}
+.commande.ok{
+    background-color: #02ae04 !important;
+}
+.commande.ko{
+    background-color: #d9534f  !important;
+}
+.gauche-sticky{
+    position: sticky;
+    top: 166px;
+}
